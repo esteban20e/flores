@@ -1,0 +1,139 @@
+/* Reseteo de estilo básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos globales */
+body {
+    font-family: 'Barlow', sans-serif;
+    background-color: rgb(67, 67, 67); 
+    color: #fff;
+}
+
+/* Contenedor principal de la página */
+.pagina-principal {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 1, 3, 0.5), rgba(0, 0, 0, 0.7)), url('./hola.gif');
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    background-position: center center; /* Centra la imagen */
+    position: relative; /* Para tener control de posicionamiento interno */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.pagina-principal p {
+    font-size: 1.5rem;
+    color: blueviolet;
+    margin-bottom: 1.5rem;
+    opacity: 1;
+    transition: opacity 0.3s ease; text-shadow: 0.3 ease;
+}
+.pagina-principal p:hover{
+    color: blanchedalmond;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+button{
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover{
+    background-color: #000080;
+}
+
+/* PAGINA FLORES */
+/* PAGINA FLORES */
+
+body {
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Contenedor principal que cubre toda la pantalla */
+.flores {
+    flex: 1;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./flores.gif');
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header transparente */
+header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(217, 217, 217, 0.3); /* Transparente */
+    position: absolute;
+    top: 0;
+    z-index: 10;
+}
+
+/* Footer transparente */
+footer {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(217, 217, 217, 0.3); /* Transparente */
+    position: absolute;
+    bottom: 0;
+    z-index: 10;
+    color: white;
+}
+
+/* Icono de música */
+.audio-icon {
+    font-size: 30px;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.audio-icon:hover {
+    color: #ffcc00;
+}
+
+/* Ocultar el elemento de audio */
+audio {
+    display: none;
+}
+
+
+/* Fondo */
+.fondo {
+    width: 100vw; /* El contenedor ocupará el ancho total de la ventana */
+    height: 100vh; /* El contenedor ocupará el alto total de la ventana */
+    background-image: url('fondo.png'); 
+    background-size: 100% 100%; /* La imagen de fondo ocupará el 50% del ancho y 50% del alto del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* La imagen estará centrada */
+}
+
+.volver {
+    background-color: rgba(217, 217, 217, 0.3); 
+    position: absolute;
+}
